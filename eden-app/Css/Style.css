@@ -7,30 +7,29 @@ body {
     height: 100vh;
     background-color: #eef2f3;
     font-family: 'Poppins', Arial, sans-serif;
+    overflow: hidden; /* Prevents overflow */
 }
 
 #container {
     text-align: center;
     background: #ffffff;
-    padding: 30px 20px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 350px;
     width: 90%;
+    max-width: 600px; /* Limit max size for container */
 }
 
 #logo-container {
     position: relative;
-    margin-bottom: 20px;
-    opacity: 1;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    height: 100%;  /* Takes up the full height of the screen */
+    width: 100%;
 }
 
 #logo {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: 100vh;  /* Fill the screen height */
+    object-fit: cover; /* Ensures logo fills the screen */
 }
 
 #loading-animation {
@@ -40,7 +39,11 @@ body {
     border-top: 4px solid #4caf50;
     border-radius: 50%;
     animation: spin 1.2s linear infinite;
-    margin: 15px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -17px; /* Centers loading animation */
+    margin-left: -17px;
 }
 
 @keyframes spin {
@@ -54,8 +57,7 @@ body {
 
 #button-container {
     display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    margin-top: 20px;
 }
 
 button {
