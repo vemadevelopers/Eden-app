@@ -1,4 +1,4 @@
-eeeeeeeeeeeeedocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         const logoContainer = document.getElementById("logo-container");
         const buttonContainer = document.getElementById("button-container");
