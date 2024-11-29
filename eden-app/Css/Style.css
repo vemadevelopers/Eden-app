@@ -5,8 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #eef2f3; /* Light gradient-like color */
-    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    background-color: #eef2f3;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 #container {
@@ -22,6 +22,8 @@ body {
 #logo-container {
     position: relative;
     margin-bottom: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 #logo {
@@ -52,7 +54,8 @@ body {
 
 #button-container {
     display: none;
-    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 button {
@@ -87,13 +90,3 @@ button {
     background: linear-gradient(45deg, #ff758c, #ff7eb3);
     transform: scale(1.05);
 }
-#logo-container, #button-container {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-}
-
-#button-container {
-    display: none; /* Initially hidden */
-    opacity: 0;    /* Hidden by transparency */
-}
-
