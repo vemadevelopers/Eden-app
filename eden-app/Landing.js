@@ -1,3 +1,13 @@
+eeeeeeeeeeeeedocument.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        const logoContainer = document.getElementById("logo-container");
+        const buttonContainer = document.getElementById("button-container");
+
+        // Hide the loading animation and show buttons
+        logoContainer.style.height = "auto"; // Restore the space for buttons
+        buttonContainer.style.display = "block"; // Show the buttons
+    }, 3000); // 3-second delay
+});
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         const logoContainer = document.getElementById("logo-container");
