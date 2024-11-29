@@ -8,20 +8,7 @@ body {
     background-color: #eef2f3;
     font-family: 'Poppins', Arial, sans-serif;
     overflow: hidden; /* Prevents overflow */
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  /* Distribute space evenly */
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    width: 90%;
-    max-width: 600px; /* Limit max size for container */
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column; /* Arrange content vertically */
 }
 
 #logo-container {
