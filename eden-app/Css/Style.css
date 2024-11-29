@@ -5,12 +5,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    background-color: #eef2f3; /* Light gradient-like color */
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
 }
 
 #container {
     text-align: center;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 90%;
 }
 
 #logo-container {
@@ -19,20 +25,20 @@ body {
 }
 
 #logo {
-    width: 150px;
+    width: 120px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 #loading-animation {
-    width: 30px;
-    height: 30px;
-    border: 4px solid #ccc;
+    width: 35px;
+    height: 35px;
+    border: 4px solid #ddd;
     border-top: 4px solid #4caf50;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 20px auto;
+    animation: spin 1.2s linear infinite;
+    margin: 15px auto;
 }
 
 @keyframes spin {
@@ -46,20 +52,38 @@ body {
 
 #button-container {
     display: none;
+    margin-top: 15px;
 }
 
-#join-button, #login-button {
-    padding: 10px 20px;
-    margin: 10px;
+button {
+    padding: 12px 25px;
+    margin: 10px 5px;
     border: none;
-    border-radius: 5px;
-    background-color: #4caf50;
-    color: #fff;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-#join-button:hover, #login-button:hover {
-    background-color: #45a049;
+#join-button {
+    background: linear-gradient(45deg, #56ccf2, #2f80ed);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#join-button:hover {
+    background: linear-gradient(45deg, #2f80ed, #56ccf2);
+    transform: scale(1.05);
+}
+
+#login-button {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login-button:hover {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    transform: scale(1.05);
 }
