@@ -21,9 +21,9 @@ body {
 }
 
 #logo {
-    width: 100%;
+    width: auto;
     height: 100%;  /* Fill container height */
-    object-fit: cover; /* Ensure the logo covers the container */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
 
 #loading-animation {
