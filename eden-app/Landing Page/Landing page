@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VEMA - Welcome</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">VEMA</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <h1>Welcome to VEMA</h1>
-            <p>Your Virtual Environmental Management Assistant</p>
-            <button class="cta-button">Get Started</button>
-        </section>
-    </main>
+    <div id="container">
+        <!-- Logo Section -->
+        <div id="logo-container">
+            <img src="Eden logo 1.svg" alt="Logo" id="logo">
+            <div id="loading-animation"></div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div id="button-container">
+            <button id="join-button">Join</button>
+            <button id="login-button">Login</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
