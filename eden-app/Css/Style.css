@@ -87,3 +87,13 @@ button {
     background: linear-gradient(45deg, #ff758c, #ff7eb3);
     transform: scale(1.05);
 }
+#logo-container, #button-container {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#button-container {
+    display: none; /* Initially hidden */
+    opacity: 0;    /* Hidden by transparency */
+}
+
