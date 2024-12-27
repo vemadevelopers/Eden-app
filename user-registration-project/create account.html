@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Farming Form</title>
+  <style>
+    /* Form Container */
+    .wp-custom-form {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px 25px;
+      background-color: rgba(255, 255, 255, 0.462);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left; /* Align content to the left */
+    }
+
+    /* Wallpaper Background for Body */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.pexels.com/photos/39351/purple-grapes-vineyard-napa-valley-napa-vineyard-39351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Center the form horizontally */
+      align-items: flex-start; /* Align to top */
+      height: 100vh;
+    }
+
+    /* Form Elements */
+    .wp-custom-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .wp-custom-form input[type="text"],
+    .wp-custom-form input[type="email"],
+    .wp-custom-form input[type="password"],
+    .wp-custom-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .wp-custom-form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    /* Button Styling */
+    .wp-custom-form button[type="submit"] {
+      display: inline-block;
+      width: 90%;
+      padding: 12px 0;
+      background: linear-gradient(135deg, #28a745, #218838);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      align-content: center;
+    }
+
+    .wp-custom-form button[type="submit"]:hover {
+      background: linear-gradient(135deg, #218838, #1b7b30);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .wp-custom-form button[type="submit"]:active {
+      background: linear-gradient(135deg, #1b7b30, #176525);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <form class="wp-custom-form" action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+    <label for="new-password">New Password</label>
+    <input type="password" id="new-password" name="new-password" placeholder="Enter new password" required>
+
+    <label for="confirm-password">Confirm Password</label>
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
